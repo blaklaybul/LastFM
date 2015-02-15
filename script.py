@@ -24,6 +24,10 @@ for artist in df_artists["artists"][1]:
 for tag in df_tags["toptags"][1]:
 		topTags.loc["2342"] = [tag["name"], tag["count"]]
 
+def populateTags():
+	for artist in topArtists.index:
+		getArtistTags(artist)
+
 ##i need to set it up so that the json is loaded before it loops
 def getArtistTags(mbid):
 	i = len(topTags)
@@ -31,7 +35,7 @@ def getArtistTags(mbid):
 	for tag in df_tags["toptags"][1]:
 		topTags.loc[i] = [mbid, tag["name"], tag["count"]]
 		i=i+1
-	print "finished with " + print topArtists.loc[mbid]["name"]
+	print "finished with " + topArtists.loc[mbid]["name"] + i + "total tags"
 
 for i in range(0,len(df_tags["toptags"][1])):
 	topTags = topTags.append("324233412", df_tags[1][i]["name"], df_tags[1][i]["count"])
