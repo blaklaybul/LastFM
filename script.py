@@ -39,7 +39,10 @@ def getArtistTags(mbid):
 		i=i+1
 	print "finished with " + topArtists.loc[mbid]["name"]
 
-populateTags()
+#method for returning similar tags 
+def getSimilarTags(tag):
+	return tagGroupsAnalyze[tagGroupsAnalyze.tag_1 == tag].sort("score",ascending=False).head(10)
+
 
 #get rid of tags with count = 0, they don't appear on lastfm artist pages.
 topTags["count"] = topTags["count"].astype(int)
