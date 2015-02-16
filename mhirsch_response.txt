@@ -17,25 +17,27 @@
 		 
 2. Outcomes:
 	- Tags with very low co-occurrence had low scores since we took into account what percentage of all pairs was represented by a single pair.
-	- that being said, when searching by a single tag, the ordering of scores of pairs containing that tag is meaningful. For example, having a look at pairs containing "UK Garage", we note that the score is not a direct reflection of the number of co-occurrences, but rather :
-		tag_1		tag_2				#	x	y		total	score
-		UK Garage	electronic			138	567	45753	1240114	27.41968608
-		UK Garage	future garage		104	567	765		1240114	26.78334398
-		UK Garage	dubstep				84	567	3374	1240114	11.72128591
-		UK Garage	House				49	567	7061	1240114	3.68885822
-		UK Garage	Rhythmic Noise		18	567	106		1240114	2.925563573
-		UK Garage	british				35	567	27965	1240114	1.777496733
-		UK Garage	funky				28	567	1342	1240114	1.586078967
-		UK Garage	deep house			18	567	818		1240114	0.780183589
-		UK Garage	electronica			21	567	14627	1240114	0.651494541
-		UK Garage	female vocalists	20	567	32331	1240114	0.578849524
-		UK Garage	Hip-Hop				18	567	16392	1240114	0.476725777
-		UK Garage	rap					17	567	10516	1240114	0.433171554
-		UK Garage	indie				17	567	70570	1240114	0.41431304
+	
+	- that being said, when searching by a single tag, the ordering of scores of pairs containing that tag is meaningful. For example, having a look at pairs containing "UK Garage", we note that the score is not a direct reflection of the number of co-occurrences, but rather an interplay between "pairs", "x", "y", and "total":
+		tag_1		tag_2				pairs	x	y		total	score
+		UK Garage	electronic			138		567	45753	1240114	27.41968608
+		UK Garage	future garage		104		567	765		1240114	26.78334398
+		UK Garage	dubstep				84		567	3374	1240114	11.72128591
+		UK Garage	House				49		567	7061	1240114	3.68885822
+		UK Garage	Rhythmic Noise		18		567	106		1240114	2.925563573
+		UK Garage	british				35		567	27965	1240114	1.777496733
+		UK Garage	funky				28		567	1342	1240114	1.586078967
+		UK Garage	deep house			18		567	818		1240114	0.780183589
+		UK Garage	electronica			21		567	14627	1240114	0.651494541
+		UK Garage	female vocalists	20		567	32331	1240114	0.578849524
+		UK Garage	Hip-Hop				18		567	16392	1240114	0.476725777
+		UK Garage	rap					17		567	10516	1240114	0.433171554
+		UK Garage	indie				17		567	70570	1240114	0.41431304
+	- Limitations.
 
 3. Ideas:
-	- Similarity between artists: For each artist we could create a vector of tags, with each component weighted to reflect the count of each tag associated with the artist. The similarity between artists could be computed by the distance between their tag vectors.
+	- Similarity between artists: For each artist we could create a vector of tags that defines them, with each component weighted to reflect the count of each tag associated with the artist. For other artists, we could a vector with the same tags (resulting in different weights) and compute the distance between their tag vectors.
 	
 	- This naive scoring compared decently to LastFm's getSimilarTag's method, however I think they benefit from a much larger sample. The rankings seem to agree fairly well for tags that appeared quite frequently like "rock" and "rap", but lack of volume brings down the scores in my calculation.
 	
-	- I think that this data set could be more interesting if we made it such that scores were antisymmetric. Introducing an order to the score would allow one to see one tag's unfluence over the other's. Tracking changes in these influence scores could allow for deeper insight into how different genres are evolving, and where they are most being influence from.
+	- I think that this data set could be more interesting if we made it such that scores were antisymmetric. Introducing an order to the score would allow one to see one tag's influence over the other's. Tracking changes in these influence scores could allow for deeper insight into how different genres are evolving, and what other genres are influencing them most.

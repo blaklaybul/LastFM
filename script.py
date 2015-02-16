@@ -27,9 +27,10 @@ for artist in df_artists["artists"][1]:
 #remove artists without an mbid
 topArtists = topArtists[topArtists.index !='']
 
-#methods for populating tags dataframe
+#methods for populating tags dataframe.. in case of json request error, make sure artists are not repeated
 def populateTags():
-	for artist in topArtists.index:
+	exclude = pd.unique(topTags.mbid)
+	for artist in topArtists[~topArtists.index.isin(exclude)].index:
 		getArtistTags(artist)
 
 def getArtistTags(mbid):
@@ -54,10 +55,8 @@ aggTags = topTags.groupby(["tag"], as_index=False).sum()
 #merge Artist's with their tags 
 ArtistsWithTags = pd.merge(topArtists, topTags, left_index = True, right_on = ["mbid"])
 
-#join tags table on itself to get pairs
+#join tags table on itself to get pairs and remove (x,x) pairs
 ArtistsWithTagPairs = pd.merge(ArtistsWithTags, ArtistsWithTags, left_on=["mbid"], right_on=["mbid"])
-
-#remove (x,x) tag pairs
 ArtistsWithTagPairs = ArtistsWithTagPairs[ArtistsWithTagPairs["tag_x"] != ArtistsWithTagPairs["tag_y"]]
 
 #now we want a new frame that consists of tag pairs with their minimum count per artist.. 
@@ -69,11 +68,10 @@ ArtistsWithTagPairs["min"] = ArtistsWithTagPairs.apply(lambda row: min(row["coun
 tagPairs = ArtistsWithTagPairs[["tag_x","tag_y","min"]]
 
 ##create a groupby object to get total occurences of tag pairs.
-tagGroups = tagPairs.groupby(["tag_x","tag_y"], as_index=False).sum()
-
-##we will only consider tags that co-occur more than 15 times together. 
+##we will only consider tags that co-occur 15 or more times together. 
 #This is for the sake of the output files, and to weed out weak relationships.
-tagGroups = tagGroups[tagGroups["min"]>15]
+tagGroups = tagPairs.groupby(["tag_x","tag_y"], as_index=False).sum()
+tagGroups = tagGroups[tagGroups["min"]>=15]
 tagGroups.columns = ["tag_1", "tag_2", "count"]
 
 #only need to group by first column, since all tags are stored as (a,b) and (b,a)
@@ -91,6 +89,8 @@ tagGroupsAnalyze.rename(columns = {"number_of_pairs":"number_of_pairs_x"}, inpla
 tagGroupsAnalyze = pd.merge(tagGroupsAnalyze, aggPairs, left_on=["tag_2"], right_on = ["tag"])
 tagGroupsAnalyze.drop(["tag"], axis=1,inplace=True)
 tagGroupsAnalyze.rename(columns = {"number_of_pairs":"number_of_pairs_y"}, inplace=True)
+
+tagGroupsAnalyze["totalPairs"]=tagGroupsAnalyze.sum(axis=0)["count"]
 
 #We assign a strength of pair metric that is determined by the number of times the tags appear together divided by the sum of the total pairs they appear in individually.
 tagGroupsAnalyze["strength_of_pair"] = tagGroupsAnalyze.apply(lambda row: float(row["count"]) / (row["number_of_pairs_x"]+row["number_of_pairs_y"]), axis=1)
