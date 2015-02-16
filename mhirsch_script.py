@@ -6,7 +6,6 @@ import json
 
 
 artistUrl = "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&page=1&limit=1000&api_key=efd4d182fb0ea0f3fa61ca00dc96d052&format=json"
-
 tagUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&api_key=efd4d182fb0ea0f3fa61ca00dc96d052&format=json&mbid="
 
 i=0

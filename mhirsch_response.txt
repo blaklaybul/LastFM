@@ -18,7 +18,7 @@
 	- The process can intuitively be thought of as follows:
 		- for each pair, what is the likelihood of this pair occurring? (pairs/total)
 		- for each tag in the pair, what is the likelihood of it occuring in a pair? (pairs/x) and (pairs/y)
-		- score: (pairs/total)*(pairs/x)*(pairs/y)*factor	 
+		- score: (pairs/total)*(pairs/x)*(pairs/y)*factor 
 
 2. Outcomes:
 	- Tags with low co-occurrence had low scores since we took into account what percentage of all pairs was represented by a single pair. So, even though two tags may only appear with each other, if they are rare tags, they will have a low score.
