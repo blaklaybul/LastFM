@@ -1,0 +1,41 @@
+1. Process:
+	- Data was requested from LastFM's api, using the following methods:
+		Top Artists method: http://www.last.fm/api/show/chart.getTopArtists
+		Top Tags method: http://www.last.fm/api/show/artist.getTopTags
+	
+	- Raw artists and tags data were stored in pandas dataframes, on which further aggregation and merging wasp performed. 
+	
+	- The first step was to get all pairs of tag for each artist. Since LastFM gives us the number of times each tag is associated with an artist, joining ArtistsWithTages dataframe on itself gave us a list of all possible tag pairs. I took the minimum of the two tag counts to be the measure for how often the tags appeared together on a single artist.
+
+	- From here, I grouped by all tag pairs, summing up the number of times they appeared across all artists.
+
+	- Next, I created a new dataframe in which to perform the analysis. For each pair, I calculated the following information:
+		- What percent of all pairs this pair represented
+		- The pairwise percents for each tag. That is, what percent of all tags that tag_1 appears in and what percent of all tags that tag_2 appears in this pair represents.
+		- I then summed the percents obtained in the previous step, and multiplied this by the percent obtained in the first step.
+		- this left me with a score that was quite low because of all the percentages that were taken, so I scaled this up by a factor of 10^6 to have more meaningful numbers.
+		 
+2. Outcomes:
+	- Tags with very low co-occurrence had low scores since we took into account what percentage of all pairs was represented by a single pair.
+	- that being said, when searching by a single tag, the ordering of scores of pairs containing that tag is meaningful. For example, having a look at pairs containing "UK Garage", we note that the score is not a direct reflection of the number of co-occurrences, but rather :
+		tag_1		tag_2				#	x	y		total	score
+		UK Garage	electronic			138	567	45753	1240114	27.41968608
+		UK Garage	future garage		104	567	765		1240114	26.78334398
+		UK Garage	dubstep				84	567	3374	1240114	11.72128591
+		UK Garage	House				49	567	7061	1240114	3.68885822
+		UK Garage	Rhythmic Noise		18	567	106		1240114	2.925563573
+		UK Garage	british				35	567	27965	1240114	1.777496733
+		UK Garage	funky				28	567	1342	1240114	1.586078967
+		UK Garage	deep house			18	567	818		1240114	0.780183589
+		UK Garage	electronica			21	567	14627	1240114	0.651494541
+		UK Garage	female vocalists	20	567	32331	1240114	0.578849524
+		UK Garage	Hip-Hop				18	567	16392	1240114	0.476725777
+		UK Garage	rap					17	567	10516	1240114	0.433171554
+		UK Garage	indie				17	567	70570	1240114	0.41431304
+
+3. Ideas:
+	- Similarity between artists: For each artist we could create a vector of tags, with each component weighted to reflect the count of each tag associated with the artist. The similarity between artists could be computed by the distance between their tag vectors.
+	
+	- This naive scoring compared decently to LastFm's getSimilarTag's method, however I think they benefit from a much larger sample. The rankings seem to agree fairly well for tags that appeared quite frequently like "rock" and "rap", but lack of volume brings down the scores in my calculation.
+	
+	- I think that this data set could be more interesting if we made it such that scores were antisymmetric. Introducing an order to the score would allow one to see one tag's unfluence over the other's. Tracking changes in these influence scores could allow for deeper insight into how different genres are evolving, and where they are most being influence from.
