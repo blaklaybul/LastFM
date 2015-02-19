@@ -1,0 +1,541 @@
+,tag,number_of_pairs
+0,00s,8143
+1,10s,2107
+2,1d,245
+3,2010s,882
+4,2014,96
+5,2pac,80
+6,3 Doors Down,68
+7,50 Cent,120
+8,50s,92
+9,60s,4396
+10,70s,7018
+11,8-bit,188
+12,80's,103
+13,80s,12833
+14,80s-influenced,112
+15,90s,7967
+16,<3,255
+17,AOR,143
+18,Acoustic Rock,790
+19,All,2171
+20,Alt-country,2738
+21,Alternative Folk,243
+22,Ariana Grande,155
+23,Aussie,73
+24,Avant-Garde,918
+25,Awesome,1071
+26,BPitch Control,108
+27,Ballad,56
+28,Baltimore,34
+29,Blue-Eyed Soul,74
+30,Britney Spears,154
+31,Brooklyn,93
+32,Brostep,159
+33,Brutal Death Metal,335
+34,Calgary,132
+35,California,1170
+36,Canadian,5300
+37,Chris Brown,174
+38,Classical,1931
+39,Coldplay,125
+40,Colombia,144
+41,Crunk,193
+42,DIsco House,203
+43,Demi Lovato,381
+44,Dirty South,566
+45,Disco,1821
+46,Disney,1081
+47,Drake,93
+48,Dreamy,556
+49,Drum and bass,195
+50,Drum n Bass,125
+51,EDM,417
+52,East Coast,277
+53,Electro Pop,742
+54,Electroclash,524
+55,Elephant 6,121
+56,Eminem,130
+57,Experimental Rock,1296
+58,Favorite,378
+59,Favourites,83
+60,Female Voices,151
+61,Female fronted metal,463
+62,Fifth Harmony,305
+63,Funk Rock,390
+64,Fusion,119
+65,G-funk,190
+66,Gabber,320
+67,Gangsta Rap,1231
+68,Garage Rock,1682
+69,Girl Groups,211
+70,Gothic,828
+71,Gothic Metal,703
+72,Gothic Rock,631
+73,Grime,442
+74,Grunge,2912
+75,Gypsy,172
+76,Hard,320
+77,Hip Hop/Rap,280
+78,Hip-Hop,16392
+79,House,7061
+80,Indietronic,81
+81,Irish Punk,228
+82,Jazz Hop,280
+83,Kanye West,112
+84,Kelly Clarkson,107
+85,Lady Gaga,80
+86,LastfmSC,32
+87,Latin Rock,132
+88,Lo-Fi,4256
+89,Love,2408
+90,Madonna,88
+91,Mainstream Hardcore,320
+92,Manchester,349
+93,Mariah Carey,175
+94,Mellow,3605
+95,Melodic Death Metal,746
+96,Mike Will Made It,64
+97,Miley Cyrus,267
+98,NWOBHM,244
+99,NYC,32
+100,Ne-Yo,147
+101,Neo Soul,721
+102,Neo-Psychedelia,810
+103,Neo-Soul,1154
+104,New Weird America,598
+105,New Zealand,664
+106,Nick Jonas,314
+107,Nintendocore,185
+108,North Carolina,99
+109,Norway,145
+110,Nu Metal,3810
+111,Nu-metal,1113
+112,Officially Shit,400
+113,Phil Collins,108
+114,Pop-Rock,1344
+115,Pop-punk,413
+116,Post punk,292
+117,Post-punk revival,563
+118,Power metal,516
+119,Progressive,1201
+120,Progressive House,1387
+121,Progressive metal,1043
+122,Progressive rock,4618
+123,Psychedelic Rock,2854
+124,Queen,16
+125,Rave,26
+126,Recommended,273
+127,Reggaeton,237
+128,Rhythmic Noise,106
+129,Rihanna,116
+130,Rock and Roll,1228
+131,Scottish,876
+132,Selena Gomez,488
+133,Shakira,228
+134,Shock Rock,126
+135,Sludge,154
+136,Soundtrack,1431
+137,Soundtracks,149
+138,Southern Rock,1026
+139,Stoner Rock,400
+140,Stones throw,103
+141,Surf,630
+142,Sweden,864
+143,Swedish Metal,97
+144,Symphonic Rock,36
+145,The Beatles,219
+146,UK,4946
+147,UK Garage,567
+148,USA,5899
+149,United Kingdom,568
+150,United States,730
+151,Uplifting,431
+152,Usher,95
+153,Warp,127
+154,West Coast Rap,597
+155,X factor,820
+156,abstract hip-hop,90
+157,acid jazz,593
+158,acoustic,14103
+159,adult contemporary,274
+160,afrikaans,209
+161,alternative,66318
+162,alternative country,208
+163,alternative dance,189
+164,alternative hip-hop,656
+165,alternative metal,3802
+166,alternative pop,300
+167,alternative rap,648
+168,alternative rnb,316
+169,alternative rock,31218
+170,amazing,980
+171,ambient,6789
+172,american,23323
+173,americana,1599
+174,ana,320
+175,anti-folk,122
+176,art pop,1017
+177,art punk,51
+178,art rock,2430
+179,atlanta,141
+180,atmospheric,454
+181,australia,701
+182,australian,3628
+183,balearic,88
+184,balkan,80
+185,band,168
+186,baroque,131
+187,baroque pop,842
+188,beatles,90
+189,beautiful,2037
+190,bebop,83
+191,belgian,214
+192,beyonce,85
+193,big beat,478
+194,big sean,103
+195,bitch,224
+196,black metal,530
+197,bluegrass,141
+198,blues,8050
+199,blues rock,3253
+200,blues-rock,120
+201,boston,99
+202,boyband,186
+203,breakbeat,280
+204,breakcore,124
+205,breda,320
+206,brit rock,136
+207,british,27965
+208,british invasion,220
+209,britpop,6398
+210,camp rock,90
+211,canada,874
+212,celtic,16
+213,celtic punk,152
+214,chamber pop,763
+215,check out,282
+216,chicago,370
+217,chill,2654
+218,chillout,10145
+219,chillwave,1760
+220,christian,200
+221,christian rock,316
+222,classic,1111
+223,classic rock,20131
+224,cloud rap,107
+225,club,510
+226,college rock,80
+227,complextro,175
+228,composer,378
+229,composers,334
+230,compton,215
+231,contemporary classical,550
+232,contemporary r&b,156
+233,core,320
+234,country,1771
+235,country rock,227
+236,crossover,626
+237,cute,295
+238,dance,18181
+239,dance pop,166
+240,dance punk,106
+241,dance-pop,670
+242,dance-punk,133
+243,dancehall,680
+244,danish,612
+245,dark,79
+246,dark-pop,112
+247,darkwave,48
+248,death metal,798
+249,deathcore,201
+250,deep house,818
+251,diva,705
+252,dj,285
+253,dnb,121
+254,doom metal,132
+255,downtempo,6540
+256,dream pop,4973
+257,dub,1058
+258,dubstep,3374
+259,dutch,247
+260,east coast rap,445
+261,easy listening,1129
+262,easy-listening,117
+263,ed banger,186
+264,electro,7059
+265,electro house,2116
+266,electronic,45753
+267,electronic rock,98
+268,electronica,14627
+269,electropop,6698
+270,elektro-gabba-schranz-hardcore,320
+271,emo,5542
+272,emocore,351
+273,england,962
+274,english,2625
+275,ethereal,733
+276,experimental,16868
+277,experimental hip-hop,175
+278,experimental rap,160
+279,falsetto,92
+280,favorites,3603
+281,female,3811
+282,female vocalist,5671
+283,female vocalists,32331
+284,female vocals,186
+285,finnish,254
+286,folk,24313
+287,folk punk,270
+288,folk rock,4700
+289,folk-rock,420
+290,folktronica,218
+291,france,64
+292,freak folk,1224
+293,french,2140
+294,fun,120
+295,funk,6772
+296,funk metal,345
+297,funky,1342
+298,future garage,765
+299,gangsta,204
+300,garage,66
+301,genius,488
+302,german,888
+303,germany,23
+304,girl group,232
+305,girlband,214
+306,glam,263
+307,glam rock,1743
+308,glitch,995
+309,glitch pop,16
+310,glitch-hop,424
+311,glo-fi,230
+312,good music,115
+313,gospel,56
+314,goth,232
+315,groove,17
+316,groove metal,469
+317,groovy,820
+318,guilty pleasure,895
+319,guitar,2129
+320,guitar virtuoso,169
+321,guys I would fuck,54
+322,hair metal,256
+323,happy,116
+324,hard rock,11908
+325,hardcore,3078
+326,hardcore punk,91
+327,hardcore techno,320
+328,hardmony,320
+329,heavy metal,4500
+330,hip hop,9455
+331,hip-house,168
+332,hiphop,1224
+333,hipster rap,173
+334,hot,383
+335,humour,136
+336,i love you,213
+337,iceland,178
+338,icelandic,1107
+339,idm,2070
+340,immune,320
+341,incubus,76
+342,indie,70570
+343,indie electronic,420
+344,indie folk,6995
+345,indie pop,23499
+346,indie rock,32244
+347,indietronica,2536
+348,industrial,1735
+349,industrial metal,737
+350,industrial rock,351
+351,instrumental,3941
+352,instrumental hip-hop,653
+353,ireland,98
+354,irish,2464
+355,jangle pop,131
+356,jazz,6632
+357,jazz vocal,32
+358,jecks,984
+359,jonas brothers,304
+360,jungle,270
+361,justin bieber,276
+362,kickasstic,262
+363,latin,1335
+364,latin pop,358
+365,legend,1366
+366,london,921
+367,los angeles,436
+368,lounge,1464
+369,love at first listen,154
+370,male,35
+371,male vocalist,1189
+372,male vocalists,14576
+373,math rock,266
+374,melancholic,534
+375,melancholy,849
+376,melodic hardcore,244
+377,melodic metal,346
+378,metal,11556
+379,metalcore,1369
+380,michael jackson,64
+381,mike patton,268
+382,minimal,420
+383,minimalism,181
+384,minimalist,121
+385,mistagged artist,538
+386,mod,128
+387,modern classical,240
+388,motown,939
+389,mysterious,569
+390,mythology,320
+391,nederhop,168
+392,neo-classical,112
+393,neoclassical,340
+394,neptunes,100
+395,netherlands,139
+396,new jersey,17
+397,new rave,647
+398,new romantic,244
+399,new wave,6277
+400,new york,2384
+401,next level beats,205
+402,nickelodeon,78
+403,ninja tune,495
+404,no wave,169
+405,noise,856
+406,noise pop,364
+407,noise rock,695
+408,norwegian,950
+409,not emo,104
+410,nu disco,166
+411,nu jazz,534
+412,nu soul,165
+413,nu-disco,79
+414,nu-jazz,501
+415,ofwgkta,160
+416,old school,54
+417,oldies,3354
+418,omi,320
+419,one direction,494
+420,overrated,18
+421,party,32
+422,pay attention,262
+423,piano,3876
+424,piano rock,848
+425,pisam no E3,245
+426,pittsburgh,92
+427,political,487
+428,pop,54003
+429,pop punk,3520
+430,pop rock,9087
+431,post rock,331
+432,post-dubstep,712
+433,post-grunge,1343
+434,post-hardcore,757
+435,post-punk,5880
+436,post-rock,2162
+437,power pop,493
+438,powerpop,412
+439,private:watchlist,105
+440,producer,107
+441,prog-rnb,184
+442,progressive death metal,174
+443,progressive trance,247
+444,proto-punk,1039
+445,psychedelic,8174
+446,psychedelic folk,321
+447,psychedelic pop,733
+448,punk,8954
+449,punk rawk,175
+450,punk rock,5429
+451,quiet storm,144
+452,quirky,74
+453,r and b,504
+454,r&b,4372
+455,r'n'b,221
+456,radio paradise,50
+457,radioparadise,50
+458,rap,10516
+459,rap metal,202
+460,rapcore,1124
+461,reggae,2081
+462,reggae fusion,113
+463,relaxing,17
+464,remix,114
+465,rhythm and blues,1926
+466,rnb,11063
+467,rock,74615
+468,rock n roll,649
+469,rockabilly,146
+470,romantic,101
+471,roots reggae,49
+472,sadcore,64
+473,scandinavian,799
+474,screamo,1072
+475,seattle,350
+476,sexy,2976
+477,shoegaze,1812
+478,shoegaze hip-hop,206
+479,siblings,153
+480,singer-songwriter,31231
+481,ska,833
+482,ska punk,136
+483,sloppy,153
+484,slow jams,143
+485,sludge metal,108
+486,smooth,320
+487,soft rock,3068
+488,soul,15367
+489,southern rap,350
+490,space rock,163
+491,spanish,690
+492,speed metal,539
+493,spotify,48
+494,sting,85
+495,surf rock,477
+496,swag,348
+497,swedish,5058
+498,swing,522
+499,symphonic metal,849
+500,synth,445
+501,synth indie rock,168
+502,synth pop,2544
+503,synthpop,6843
+504,taylor swift,17
+505,tech house,108
+506,tech-house,283
+507,techno,2200
+508,teen,32
+509,teen pop,602
+510,the netherlands,115
+511,the third movement,320
+512,thrash,154
+513,thrash metal,1157
+514,trance,797
+515,trancecore,211
+516,trap,114
+517,trip hop,931
+518,trip-hop,5879
+519,tropical house,173
+520,trumpet,188
+521,ttm,320
+522,twee,305
+523,uk funky,32
+524,under 2000 listeners,365
+525,underground,82
+526,underground hip-hop,1667
+527,underground rap,312
+528,unknown,502
+529,urban,790
+530,violin,36
+531,vocal jazz,437
+532,vocal trance,152
+533,want to see live,108
+534,west coast,851
+535,whitney houston,95
+536,witch house,297
+537,wonky,259
+538,yung dynasty,48
+539,zef,126
